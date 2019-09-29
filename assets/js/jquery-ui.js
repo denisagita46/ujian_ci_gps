@@ -118,6 +118,14 @@ function visible( element ) {
 			return $.css( this, "visibility" ) === "hidden";
 		}).length;
 }
+function hanyaAngka(evt) {
+		  var charCode = (evt.which) ? evt.which : event.keyCode
+		   if (charCode > 31 && (charCode < 48 || charCode > 57))
+ 
+		    return false;
+		  return true;
+		}	
+	
 
 $.extend( $.expr[ ":" ], {
 	data: $.expr.createPseudo ?
@@ -16611,7 +16619,6 @@ var tooltip = $.widget( "ui.tooltip", {
 		this.liveRegion.remove();
 	}
 });
-
 
 
 }));

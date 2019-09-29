@@ -12,17 +12,10 @@ class Page extends CI_Controller{
 
   function index(){
   
-    $this->load->view('dashboard gps');	
+    $this->load->view('dashboard anggota');	
   }
   
-  function change_password(){
-     
-    if($this->session->userdata('akses')=='1' || $this->session->userdata('akses')=='2'){
-      $this->load->view('form_change_password');
-    }else{
-      echo "Anda tidak berhak mengakses halaman ini";
-    }
-  }
+
 
   }
 

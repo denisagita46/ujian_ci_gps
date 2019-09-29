@@ -17,13 +17,13 @@
             <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="remember-me"> Remember me
+                <a href="<?php echo base_url().'index.php/anggota/add'?>"> Daftar Anggota
               </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
           </form>
         </div>
-        </div> <!-- /container -->
+        </div> 
 
 
     <script src="<?php echo base_url().'assets/js/jquery.js'?>"></script>
